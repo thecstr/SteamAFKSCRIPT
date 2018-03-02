@@ -15,6 +15,7 @@ client.on('loggedOn', () => {
     console.log('succesfully logged on.');
     client.setPersona(SteamUser.Steam.EPersonaState.Online);
     client.gamesPlayed(config.idlegameid);
+
 });
 
 client.on("friendMessage", function (steamID, message) {
